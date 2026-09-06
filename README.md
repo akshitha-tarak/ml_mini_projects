@@ -1,16 +1,7 @@
 # 🚀 Machine Learning Mini-Projects (`ml-mini-projects`)
 
-A curated monorepo containing baseline machine learning models, exploratory data analyses, and deployment-ready pipelines across core machine learning domains: **Classification**, **Clustering**, **Natural Language Processing (NLP)**, and **Time Series Forecasting**.
-
----
-
-## 📌 Repository Strategy
-
-### Why a Monorepo for Baseline Projects?
-Publishing separate repositories for standalone single-notebook experiments clutters your GitHub profile and dilutes your work. Consolidating baseline projects into **`ml-mini-projects`** offers several distinct advantages:
-- **Clean, Unified Portfolio**: Presents diverse machine learning capabilities (tabular, text, time series, unsupervised) under a single cohesive, well-documented roof.
-- **Consistent Code Standards**: Enforces standardized dependency management (`requirements.txt`), artifact serialization (`joblib`), and deployment templates across all projects.
-- **Side-by-Side Benchmarkability**: Enables immediate comparison of architectures, loss functions, scaling techniques, and evaluation metrics across problem domains.
+A curated monorepo containing baseline machine learning models, exploratory data analyses, and deployment-ready pipelines across core machine learning domains: 
+**Classification**, **Clustering**, **Natural Language Processing (NLP)**, and **Time Series Forecasting**.
 
 ---
 
