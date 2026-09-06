@@ -1,0 +1,27 @@
+# Python virtual environments
+.venv/
+env/
+venv/
+ENV/
+
+# Python cache & compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# Large Datasets (> 100MB exceed GitHub's hard file size limit)
+*.csv
+!customer_segmentation/Mall_Customers.csv
+!Sonar_Classification/sonardata.csv
+!time-series/airline-passengers.csv
+
+# IDE & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
