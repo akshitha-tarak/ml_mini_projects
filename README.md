@@ -12,14 +12,6 @@ Publishing separate repositories for standalone single-notebook experiments clut
 - **Consistent Code Standards**: Enforces standardized dependency management (`requirements.txt`), artifact serialization (`joblib`), and deployment templates across all projects.
 - **Side-by-Side Benchmarkability**: Enables immediate comparison of architectures, loss functions, scaling techniques, and evaluation metrics across problem domains.
 
-### 🔄 When to Spin Out into Standalone Repositories
-Spin out an individual project from this monorepo into its own dedicated repository **only when scaling it into a full-stack, production ML system**, which includes:
-- [ ] **Automated Data Ingestion**: Scheduled ETL/ELT pipelines with data validation (e.g., Great Expectations, dbt, Apache Airflow).
-- [ ] **Production API & Microservice**: Fast serving layer using FastAPI / Docker containerization with request validation.
-- [ ] **Comprehensive Test Suite**: Automated unit and integration testing (pytest, data drift detection).
-- [ ] **CI/CD & MLOps Pipelines**: Automated model evaluation, GitHub Actions CI/CD, and experiment tracking (e.g., MLflow, Weights & Biases).
-- [ ] **Custom Full-Stack UI**: A dedicated React / Next.js / Flutter frontend interface.
-
 ---
 
 ## 📊 Master Project Summary
