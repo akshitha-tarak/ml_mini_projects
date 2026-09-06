@@ -30,7 +30,7 @@ Spin out an individual project from this monorepo into its own dedicated reposit
 | **[Sonar Rock vs. Mine Classifier](./Sonar_Classification)** | Binary Classification (Signal Analysis) | Support Vector Classifier (`SVC`) + `StandardScaler` | **Test Acc:** 92.86%<br>**Train Acc:** 96.99% | ✅ Streamlit | [Explore Folder](./Sonar_Classification) |
 | **[Customer Segmentation](./customer_segmentation)** | Unsupervised Clustering | K-Means ($k=5$) + `StandardScaler` | **Elbow Method:** Optimal $k=5$<br>**Silhouette Analysis** | ✅ Streamlit | [Explore Folder](./customer_segmentation) |
 | **[Fake News Prediction](./fake_news_pred)** | NLP Binary Text Classification | `TfidfVectorizer` + Logistic Regression Pipeline | **Test Acc:** 93.48%<br>**F1-Score:** 0.93<br>35,000 n-gram features | ✅ Streamlit | [Explore Folder](./fake_news_pred) |
-| **[Airline Passenger Forecasting](./time-series)** | Time Series Forecasting | SARIMAX $(1,1,1)\times(1,1,1,12)$ with Log Transform | **MSE:** 277.41<br>**MAE:** 11.99<br>**RMSE:** 16.66 | 📈 Forecast | [Explore Folder](./time-series) |
+| **[Airline Passenger Forecasting](./time-series)** | Time Series Forecasting | SARIMAX $(1,1,1)\times(1,1,1,12)$ with Log Transform | **MSE:** 277.41<br>**MAE:** 11.99<br>**RMSE:** 16.66 | ✅ Streamlit | [Explore Folder](./time-series) |
 
 ---
 
@@ -139,6 +139,10 @@ ml-mini-projects/
 │
 └── time-series/                        # Time Series Analysis & Forecasting
     ├── timefore.ipynb                  # Trend/seasonality decomposition, log-transform, SARIMAX
+    ├── export_artifacts.py             # Script to train & export model.joblib & model_full.joblib
+    ├── app.py                          # Streamlit passenger demand forecasting dashboard
+    ├── model.joblib                    # Trained SARIMAX validation model (1949-1959)
+    ├── model_full.joblib               # Production SARIMAX forecasting model (1949-1960)
     └── airline-passengers.csv          # International airline passenger dataset
 ```
 
@@ -174,6 +178,10 @@ pip install -r requirements.txt
 - **Credit Card Fraud Detection**:
   ```bash
   streamlit run Credit_Card_Fraud/app.py
+  ```
+- **Airline Passenger Forecasting**:
+  ```bash
+  streamlit run time-series/app.py
   ```
 
 ---
