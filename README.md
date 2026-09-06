@@ -1,24 +1,7 @@
 # 🚀 Machine Learning Mini-Projects (`ml-mini-projects`)
 
-A curated monorepo containing baseline machine learning models, exploratory data analyses, and deployment-ready pipelines across core machine learning domains: **Classification**, **Clustering**, **Natural Language Processing (NLP)**, and **Time Series Forecasting**.
-
----
-
-## 📌 Repository Strategy
-
-### Why a Monorepo for Baseline Projects?
-Publishing separate repositories for standalone single-notebook experiments clutters your GitHub profile and dilutes your work. Consolidating baseline projects into **`ml-mini-projects`** offers several distinct advantages:
-- **Clean, Unified Portfolio**: Presents diverse machine learning capabilities (tabular, text, time series, unsupervised) under a single cohesive, well-documented roof.
-- **Consistent Code Standards**: Enforces standardized dependency management (`requirements.txt`), artifact serialization (`joblib`), and deployment templates across all projects.
-- **Side-by-Side Benchmarkability**: Enables immediate comparison of architectures, loss functions, scaling techniques, and evaluation metrics across problem domains.
-
-### 🔄 When to Spin Out into Standalone Repositories
-Spin out an individual project from this monorepo into its own dedicated repository **only when scaling it into a full-stack, production ML system**, which includes:
-- [ ] **Automated Data Ingestion**: Scheduled ETL/ELT pipelines with data validation (e.g., Great Expectations, dbt, Apache Airflow).
-- [ ] **Production API & Microservice**: Fast serving layer using FastAPI / Docker containerization with request validation.
-- [ ] **Comprehensive Test Suite**: Automated unit and integration testing (pytest, data drift detection).
-- [ ] **CI/CD & MLOps Pipelines**: Automated model evaluation, GitHub Actions CI/CD, and experiment tracking (e.g., MLflow, Weights & Biases).
-- [ ] **Custom Full-Stack UI**: A dedicated React / Next.js / Flutter frontend interface.
+A curated monorepo containing baseline machine learning models, exploratory data analyses, and deployment-ready pipelines across core machine learning domains: 
+**Classification**, **Clustering**, **Natural Language Processing (NLP)**, and **Time Series Forecasting**.
 
 ---
 
@@ -26,11 +9,13 @@ Spin out an individual project from this monorepo into its own dedicated reposit
 
 | Project | Task Type | Primary Algorithm | Key Evaluation Metrics | Interactive App | Direct Link |
 | :--- | :--- | :--- | :--- | :---: | :---: |
-| **[Credit Card Fraud Detection](./Credit_Card_Fraud)** | Imbalanced Binary Classification | Random Forest (Balanced Subsample) / Decision Tree | **Test Acc:** 99.95%<br>**PR-AUC:** 0.8537<br>Balanced class reweighting | ✅ Streamlit | [Explore Folder](./Credit_Card_Fraud) |
-| **[Sonar Rock vs. Mine Classifier](./Sonar_Classification)** | Binary Classification (Signal Analysis) | Support Vector Classifier (`SVC`) + `StandardScaler` | **Test Acc:** 92.86%<br>**Train Acc:** 96.99% | ✅ Streamlit | [Explore Folder](./Sonar_Classification) |
-| **[Customer Segmentation](./customer_segmentation)** | Unsupervised Clustering | K-Means ($k=5$) + `StandardScaler` | **Elbow Method:** Optimal $k=5$<br>**Silhouette Analysis** | ✅ Streamlit | [Explore Folder](./customer_segmentation) |
-| **[Fake News Prediction](./fake_news_pred)** | NLP Binary Text Classification | `TfidfVectorizer` + Logistic Regression Pipeline | **Test Acc:** 93.48%<br>**F1-Score:** 0.93<br>35,000 n-gram features | ✅ Streamlit | [Explore Folder](./fake_news_pred) |
-| **[Airline Passenger Forecasting](./time-series)** | Time Series Forecasting | SARIMAX $(1,1,1)\times(1,1,1,12)$ with Log Transform | **MSE:** 277.41<br>**MAE:** 11.99<br>**RMSE:** 16.66 | ✅ Streamlit | [Explore Folder](./time-series) |
+
+| **[Credit Card Fraud Detection](./Credit_Card_Fraud)** | Imbalanced Binary Classification | Random Forest (Balanced Subsample) / Decision Tree | **Test Acc:** 99.95%<br>**PR-AUC:** 0.8537<br>Balanced class reweighting | https://proj1-credit-card.streamlit.app/ | [Explore Folder](./Credit_Card_Fraud) |
+| **[Sonar Rock vs. Mine Classifier](./Sonar_Classification)** | Binary Classification (Signal Analysis) | Support Vector Classifier (`SVC`) + `StandardScaler` | **Test Acc:** 92.86%<br>**Train Acc:** 96.99% | https://proj2-sonar-classification.streamlit.app/ | [Explore Folder](./Sonar_Classification) |
+| **[Customer Segmentation](./customer_segmentation)** | Unsupervised Clustering | K-Means ($k=5$) + `StandardScaler` | **Elbow Method:** Optimal $k=5$<br>**Silhouette Analysis** | https://proj3-customer-segmentation.streamlit.app/ | [Explore Folder](./customer_segmentation) |
+| **[Fake News Prediction](./fake_news_pred)** | NLP Binary Text Classification | `TfidfVectorizer` + Logistic Regression Pipeline | **Test Acc:** 93.48%<br>**F1-Score:** 0.93<br>35,000 n-gram features | https://proj4-fake-news-prediction.streamlit.app/ | [Explore Folder](./fake_news_pred) |
+| **[Airline Passenger Forecasting](./time-series)** | Time Series Forecasting | SARIMAX $(1,1,1)\times(1,1,1,12)$ with Log Transform | **MSE:** 277.41<br>**MAE:** 11.99<br>**RMSE:** 16.66 | 📈 Forecast | [Explore Folder](./time-series) |
+
 
 ---
 
